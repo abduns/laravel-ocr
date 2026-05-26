@@ -1,5 +1,5 @@
 {
-    "name": "dunn/laravel-ocr",
+    "name": "abduns/laravel-ocr",
     "description": "Laravel-first wrapper around Tesseract 5 OCR.",
     "license": "MIT",
     "keywords": ["laravel", "ocr", "tesseract", "pdf", "image"],
