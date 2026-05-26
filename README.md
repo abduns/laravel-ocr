@@ -18,6 +18,7 @@ Laravel-first wrapper around Tesseract 5 OCR for images and PDFs.
 - Filesystem disk support, including remote source disks
 - Publishable config file
 - Artisan command for direct scans
+- Setup check command for Tesseract, language data, temp storage, and PDF tooling
 - Lazy validation so apps can boot without a local OCR binary
 - AI agent instructions included for common coding assistants
 - Laravel Boost guidelines and skill included for AI-assisted Laravel development
@@ -177,9 +178,14 @@ Event::listen(OcrCompleted::class, function (OcrCompleted $event) {
 ### Artisan
 
 ```bash
+php artisan ocr:check
+php artisan ocr:check --lang=eng,ind
+php artisan ocr:check --skip-pdf
 php artisan ocr:scan storage/app/invoice.png --lang=eng --psm=6
 php artisan ocr:scan storage/app/report.pdf --lang=eng --dpi=300
 ```
+
+Use `ocr:check` before wiring OCR into production or queue workers. It verifies the configured Tesseract binary, Tesseract 5 version, requested language data, local temp disk, and PDF backend. Use `--skip-pdf` when the app only needs image OCR.
 
 For PDFs, page output is separated by a form-feed character.
 
@@ -286,6 +292,7 @@ References:
 | Queued Jobs | Yes |
 | Lifecycle Events | Yes |
 | Artisan Scans | Yes |
+| Setup Diagnostics | Yes |
 
 ---
 
@@ -354,6 +361,7 @@ PDF integration also needs Ghostscript or a working Imagick PDF policy.
 
 ## Roadmap
 
+- [ ] Add optional cloud OCR driver integrations while keeping local Tesseract as the default engine
 - [ ] Add more CLI output format options
 - [ ] Add per-page PDF progress callbacks
 - [ ] Add richer queue result handling examples
@@ -374,4 +382,4 @@ If you discover security issues, please report them responsibly.
 
 ## License
 
-MIT
+The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.

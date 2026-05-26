@@ -58,6 +58,20 @@ Important config and environment values:
 | `OCR_QUEUE_CONNECTION` / `ocr.queue.connection` | Queue connection for deferred OCR |
 | `OCR_QUEUE_NAME` / `ocr.queue.name` | Default queue name |
 
+## Setup Check
+
+Use the package command to verify the local OCR environment:
+
+```bash
+php artisan ocr:check
+php artisan ocr:check --lang=eng,ind
+php artisan ocr:check --skip-pdf
+```
+
+`ocr:check` verifies the configured Tesseract binary, Tesseract 5 version,
+requested language data, local temp disk, and PDF backend. Use `--skip-pdf`
+when the app only needs image OCR.
+
 ## Image OCR
 
 ```php

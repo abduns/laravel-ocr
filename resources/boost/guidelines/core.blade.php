@@ -30,6 +30,19 @@ php artisan vendor:publish --tag=ocr-config
 Install Tesseract 5 and at least one language pack before running real OCR.
 PDF support also requires Ghostscript or a working Imagick PDF policy.
 
+### Setup check
+
+Use `ocr:check` to verify the configured Tesseract binary, Tesseract 5 version,
+requested language data, local temp disk, and PDF backend.
+
+@verbatim
+<code-snippet name="Check Laravel OCR setup" lang="bash">
+php artisan ocr:check
+php artisan ocr:check --lang=eng,ind
+php artisan ocr:check --skip-pdf
+</code-snippet>
+@endverbatim
+
 ### Image OCR
 
 @verbatim

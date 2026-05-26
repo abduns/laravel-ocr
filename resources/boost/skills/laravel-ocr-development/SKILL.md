@@ -61,6 +61,21 @@ brew install tesseract ghostscript
 Queue workers need the same binaries, language data, environment variables, and
 filesystem access as web requests.
 
+## Setup check
+
+Run the package check command before wiring OCR into production or queue
+workers:
+
+```bash
+php artisan ocr:check
+php artisan ocr:check --lang=eng,ind
+php artisan ocr:check --skip-pdf
+```
+
+`ocr:check` verifies the configured Tesseract binary, Tesseract 5 version,
+requested language data, local temp disk, and PDF backend. Use `--skip-pdf`
+when the app only needs image OCR.
+
 ## Image OCR
 
 ```php

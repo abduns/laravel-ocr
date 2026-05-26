@@ -2,6 +2,7 @@
 
 namespace Dunn\LaravelOcr;
 
+use Dunn\LaravelOcr\Console\Commands\OcrCheckCommand;
 use Dunn\LaravelOcr\Console\Commands\OcrScanCommand;
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +28,10 @@ final class OcrServiceProvider extends ServiceProvider
                 __DIR__.'/../config/ocr.php' => config_path('ocr.php'),
             ], 'ocr-config');
 
-            $this->commands([OcrScanCommand::class]);
+            $this->commands([
+                OcrCheckCommand::class,
+                OcrScanCommand::class,
+            ]);
         }
     }
 }
