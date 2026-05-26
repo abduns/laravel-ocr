@@ -1,13 +1,13 @@
 ---
 name: laravel-ocr-development
-description: Build and debug Laravel OCR features with dunn/laravel-ocr, including Tesseract setup, image OCR, PDF OCR, filesystem disks, queues, lifecycle events, exceptions, and package verification.
+description: Build and debug Laravel OCR features with abduns/laravel-ocr, including Tesseract setup, image OCR, PDF OCR, filesystem disks, queues, lifecycle events, exceptions, and package verification.
 ---
 
 # Laravel OCR Development
 
 ## When to use this skill
 
-Use this skill when a Laravel app needs OCR through `dunn/laravel-ocr`, or when
+Use this skill when a Laravel app needs OCR through `abduns/laravel-ocr`, or when
 you are debugging OCR behavior in an app that already uses the package.
 
 Do not replace this package with a cloud OCR SDK unless the user explicitly asks
@@ -15,7 +15,7 @@ for cloud OCR.
 
 ## Package model
 
-`dunn/laravel-ocr` is a headless Laravel wrapper around the local Tesseract 5
+`abduns/laravel-ocr` is a headless Laravel wrapper around the local Tesseract 5
 CLI. It provides:
 
 - Fluent image and PDF OCR builders
@@ -32,7 +32,7 @@ package copies sources to the local temp disk before OCR.
 ## Installation
 
 ```bash
-composer require dunn/laravel-ocr
+composer require abduns/laravel-ocr
 php artisan vendor:publish --tag=ocr-config
 ```
 

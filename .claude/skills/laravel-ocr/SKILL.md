@@ -1,6 +1,6 @@
 ---
 name: laravel-ocr
-description: "Use when adding, configuring, testing, or debugging OCR in a Laravel app with `dunn/laravel-ocr`. Covers local Tesseract 5 setup, image and PDF OCR, filesystem disks, queue dispatching, lifecycle events, exceptions, CI dependencies, and package development checks. Do not use for cloud OCR SDKs unless the user explicitly asks for cloud OCR."
+description: "Use when adding, configuring, testing, or debugging OCR in a Laravel app with `abduns/laravel-ocr`. Covers local Tesseract 5 setup, image and PDF OCR, filesystem disks, queue dispatching, lifecycle events, exceptions, CI dependencies, and package development checks. Do not use for cloud OCR SDKs unless the user explicitly asks for cloud OCR."
 license: MIT
 metadata:
   author: dunn
@@ -12,7 +12,7 @@ Read the repository root `AGENTS.md` first. It is the canonical, tool-agnostic
 AI instruction file for this package. Use the notes below only when `AGENTS.md`
 is unavailable.
 
-This app uses `dunn/laravel-ocr`, a headless Laravel wrapper around the local
+This app uses `abduns/laravel-ocr`, a headless Laravel wrapper around the local
 Tesseract 5 CLI. It provides a fluent API, queueable jobs, lifecycle events,
 filesystem disk support, a publishable config file, and an `ocr:scan` Artisan
 command.
@@ -35,7 +35,7 @@ command.
 Install the package:
 
 ```bash
-composer require dunn/laravel-ocr
+composer require abduns/laravel-ocr
 php artisan vendor:publish --tag=ocr-config
 ```
 

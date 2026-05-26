@@ -2,10 +2,10 @@
 
 Laravel-first wrapper around Tesseract 5 OCR for images and PDFs.
 
-[![Tests](https://github.com/dunn/laravel-ocr/actions/workflows/tests.yml/badge.svg)](https://github.com/dunn/laravel-ocr/actions)
-[![Version](https://img.shields.io/packagist/v/dunn/laravel-ocr.svg)](https://packagist.org/packages/dunn/laravel-ocr)
-[![Downloads](https://img.shields.io/packagist/dt/dunn/laravel-ocr.svg)](https://packagist.org/packages/dunn/laravel-ocr)
-[![License](https://img.shields.io/packagist/l/dunn/laravel-ocr.svg)](LICENSE)
+[![Tests](https://github.com/abduns/laravel-ocr/actions/workflows/tests.yml/badge.svg)](https://github.com/abduns/laravel-ocr/actions)
+[![Version](https://img.shields.io/packagist/v/abduns/laravel-ocr.svg)](https://packagist.org/packages/abduns/laravel-ocr)
+[![Downloads](https://img.shields.io/packagist/dt/abduns/laravel-ocr.svg)](https://packagist.org/packages/abduns/laravel-ocr)
+[![License](https://img.shields.io/packagist/l/abduns/laravel-ocr.svg)](LICENSE)
 
 ---
 
@@ -47,7 +47,7 @@ brew install tesseract ghostscript
 ## Installation
 
 ```bash
-composer require dunn/laravel-ocr
+composer require abduns/laravel-ocr
 ```
 
 Publish the config file when you need to customize paths, defaults, queues, or PDF rasterization:
@@ -57,6 +57,8 @@ php artisan vendor:publish --tag=ocr-config
 ```
 
 The package is auto-discovered by Laravel. The facade alias is `Ocr`.
+
+The Composer package and GitHub repository are `abduns/laravel-ocr`. The PHP namespace intentionally remains `Dunn\LaravelOcr`.
 
 ---
 

@@ -7,7 +7,7 @@ CLI for image and PDF OCR.
 
 - Use the `Dunn\LaravelOcr\Facades\Ocr` facade for application code examples.
 - Keep namespaces under `Dunn\LaravelOcr`.
-- Keep Composer package references as `dunn/laravel-ocr`.
+- Keep Composer package and repository references as `abduns/laravel-ocr`.
 - Treat OCR as a local process integration, not a cloud OCR integration.
 - Keep `ocr.temp_disk` on a local Laravel filesystem disk because Tesseract and
   PDF rasterizers need real local paths.
@@ -22,7 +22,7 @@ CLI for image and PDF OCR.
 
 @verbatim
 <code-snippet name="Install Laravel OCR" lang="bash">
-composer require dunn/laravel-ocr
+composer require abduns/laravel-ocr
 php artisan vendor:publish --tag=ocr-config
 </code-snippet>
 @endverbatim

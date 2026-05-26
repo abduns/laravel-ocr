@@ -1,7 +1,7 @@
 # Laravel OCR AI Instructions
 
 Use these instructions when adding, configuring, testing, or debugging OCR in a
-Laravel app with `dunn/laravel-ocr`.
+Laravel app with `abduns/laravel-ocr`.
 
 ## Package Scope
 
@@ -24,14 +24,14 @@ downloaders unless the user explicitly asks for them.
 - Queue workers need the same binaries, traineddata, environment variables, and
   filesystem access as web requests.
 - Keep namespaces under `Dunn\LaravelOcr`.
-- Keep Composer package references as `dunn/laravel-ocr`.
+- Keep Composer package and repository references as `abduns/laravel-ocr`.
 
 ## Install and Configure
 
 Install the package:
 
 ```bash
-composer require dunn/laravel-ocr
+composer require abduns/laravel-ocr
 php artisan vendor:publish --tag=ocr-config
 ```
 

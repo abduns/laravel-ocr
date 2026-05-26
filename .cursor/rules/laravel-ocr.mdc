@@ -10,5 +10,5 @@ alwaysApply: true
 
 Follow the repository-wide Laravel OCR AI instructions in `AGENTS.md`.
 
-Use `Dunn\LaravelOcr` for namespaces and `dunn/laravel-ocr` for Composer package
+Use `Dunn\LaravelOcr` for namespaces and `abduns/laravel-ocr` for Composer package
 references.
