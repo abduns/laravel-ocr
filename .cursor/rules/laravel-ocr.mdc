@@ -1,0 +1,14 @@
+---
+description: Laravel OCR package instructions
+globs:
+  - "**/*.php"
+  - "README.md"
+  - "composer.json"
+  - "config/**/*.php"
+alwaysApply: true
+---
+
+Follow the repository-wide Laravel OCR AI instructions in `AGENTS.md`.
+
+Use `Dunn\LaravelOcr` for namespaces and `dunn/laravel-ocr` for Composer package
+references.
